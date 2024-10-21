@@ -17,3 +17,18 @@ Route::get('/', function () {
     $links = ["laravel", "games", "boolean"];
     return view('home', compact("links"));
 });
+
+Route::get('/laravel', function () {
+    $links = ["laravel", "games", "boolean"];
+    return view('laravel', compact("links"));
+});
+
+Route::get('/games', function () {
+    $links = ["laravel", "games", "boolean"];
+    return view('games', compact("links"));
+});
+
+Route::get('/boolean', function () {
+    $links = ["laravel", "games", "boolean"];
+    return view('boolean', compact("links"));
+});
